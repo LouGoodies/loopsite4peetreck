@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Pętle w PHP</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body link="white" vlink="white" alink="white" id="primary_feature" class="feature">
+
+        <section>
+            <h1 class="color" style="font-size: 50px">Pętla do...while w PHP</h1>
+
+            <h4 class="color" style="font-size: 20px;">
+                Pętla do .. while jest bardzo podobna do pętli while, z tym że kod wykonuje się najpierw, a potem sprawdzany jest warunek. Pętla ta ma następująca składnię:
+            </h4>
+            <div class="definition" style="margin-right: 650px; margin-left: 650px;">
+                <strong>do</strong> 
+                ... tutaj znajduje się blok kodu wykonywany w pętli ...<br>
+                } while (warunek)
+            </div>
+            <h4 class="color" style="font-size: 20px;">
+                Kod zawarty w pętli wykonuje się tak długo, dopóki warunek zwraca wartość true.<br>
+                Gdy warunek nie jest spełniony na wejściu w pętlę, kod programu zawarty w pętli wykona się przynajmniej raz.
+            </h4>
+            <h4 class="color" style="font-size: 20px;">Przykład użycia pętli do ... while - po wykonaniu dostaniemy wynik "Mashala" 10 razy</h4>   
+                     <div class="codebox" style="margin-left: 600px;">
+                        <pre class="tlocodeboxpre">
+                            &lt;?php
+                            $i=0;
+                            do {
+                            echo "Mashala";
+                            $i++;
+                            } while ($i<=9)
+                            ?>
+                        </pre>
+                     </div>
+
+                     <h4 class="color" style="font-size: 20px;">Porównanie pętli while i do ... while</h4>   
+                     <center>
+                     <img src="/while-dowhile.jpg" width="600px">
+                    </center>
+                     
+
+        </section>    
+
+    </body>
+</html>

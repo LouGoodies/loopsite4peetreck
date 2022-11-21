@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Pętle w PHP</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body link="white" vlink="white" alink="white" id="primary_feature" class="feature">
+
+        <section>
+            <h1 class="color" style="font-size: 50px">Pętla foreach w PHP</h1>
+
+            <h4 class="color" style="font-size: 20px;">
+                Foreach jest nieco inną pętlą od pozostałych. Służy do operacji na tablicach. Dokładniej mówiąc, możemy dzięki niej łatwo przeglądać kolejne elementy tablicy.<br>
+                Podstawowy zapis tej pętli wygląda następująco:<br>
+            </h4>
+                     <div class="codebox" style="margin-left: 600px;">
+                        <pre class="tlocodeboxpre">
+                            &lt;?php
+                            foreach ($tablica as $element) {
+                            }
+                        </pre>
+                     </div>
+
+                     <h4 class="color" style="font-size: 20px;">
+                        Za każdym przejściem tablicy, pobierany jest jej kolejny element i przypisywany do zmiennej $element. <br>
+                        Może to być kolejna tablica, obiekt czy pojedyncza wartość, bez znaczenia. foreach automatycznie kończy się, gdy „przejrzy” całą tablicę. <br>
+                        Jak możemy w praktyce użyć tej pętli? Posłużę się tu przykładem z lekcji wprowadzającej zagadnienie tablicy. <br>
+                        Załóżmy, że mamy w tablicy listę imion uczestników wycieczki i potrzebujemy wyświetlić wszystkie. Zrobimy to tak: <br>
+                    </h4>
+            
+
+                    <h4 class="color" style="font-size: 20px;" >Pierwszy przykład użycia pętli foreach - po wykonaniu dostaniemy wynik "Jan, Piotr, Adrian, Marek, Adam,"</h4>   
+                    <div class="codebox" style="margin-left: 600px;">
+                       <pre class="tlocodeboxpre">
+                           &lt;?php
+                           $people = ['Jan', 'Piotr', 'Adrian', 'Marek', 'Adam'];
+                           foreach ($people as $person) {
+                               echo $person . ', ';
+                           }
+                       </pre>
+                    </div>
+
+                    <h4 class="color" style="font-size: 20px;">
+                        Bez użycia pętli musielibyśmy ręcznie wypisać wyświetlenie wszystkich elementów. <br>
+                        A gdyby zdarzyło się, że tablica nie ma dokładnie określonej liczby elementów, to już w ogóle byłby problem. <br>
+                    </h4>
+
+                    <h4 class="color" style="font-size: 20px;">Drugi przykład użycia pętli foreach - po wykonaniu dostaniemy wynik "JanPiotrAdrianMarekAdam"</h4>   
+                    <div class="codebox" style="margin-left: 600px;">
+                       <pre class="tlocodeboxpre">
+                           &lt;?php
+                           $people = ['Jan', 'Piotr', 'Adrian', 'Marek', 'Adam'];
+                           echo $people[0];
+                           echo $people[1];
+                           // ...
+                           echo $people[4];
+                       </pre>
+                    </div>
+
+                    <h4 class="color" style="font-size: 20px;">
+                        Istnieje także możliwość odczytania indeksu/klucza dla każdego elementu poprzez dodanie =>.<br>
+                    </h4>
+
+                    <h4 class="color" style="font-size: 20px;">Trzeci przykład użycia pętli foreach - po wykonaniu dostaniemy wynik "Mname: Jan, age: 26, address: Kwiatowa 1, email: jan@example.com,"</h4>   
+                    <div class="codebox" style="margin-left: 600px;">
+                       <pre class="tlocodeboxpre">
+                           &lt;?php
+                           $person = [
+                               'name' => 'Jan',
+                               'age' => 26,
+                               'address' => 'Kwiatowa 1',
+                               'email' => 'jan@example.com'
+                           ];
+                           foreach ($person as $data => $value) {
+                               echo $data . ': ' . $value . ', ';
+                           }
+                       </pre>
+                    </div>
+
+        </section>    
+
+    </body>
+</html>

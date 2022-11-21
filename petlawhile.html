@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Pętle w PHP</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body link="white" vlink="white" alink="white" id="primary_feature" class="feature">
+
+        <section>
+            <h1 class="color" style="font-size: 50px">Pętla while w PHP</h1>
+
+            <div class="definition" style="margin-right: 650px; margin-left: 650px;">
+                <strong>while</strong> 
+                (warunek) {<br>
+                    ... tutaj znajduje się blok kodu wykonywany w pętli ...<br>
+                    }
+            </div>
+            <h4 class="color" style="font-size: 20px;">
+                Kod zawarty w pętli wykonuje się tak długo, dopóki warunek zwraca wartość true.<br>
+                Gdy warunek nie jest spełniony przy wejściu w pętlę, kod programu zawarty w pętli nie wykona się ani razu.<br>
+            </h4>
+
+            <h4 class="color" style="font-size: 20px;">Przykład użycia pętli while - po wykonaniu dostaniemy wynik "Lubię pizze" 10 razy</h4>   
+                     <div class="codebox" style="margin-left: 600px;">
+                        <pre class="tlocodeboxpre">
+                            &lt;?php
+                            $i=0;
+                            while ($i<=9) {
+                            echo "Lubię pizze";
+                            $i++;
+                            }
+                            ?>
+                        </pre>
+                     </div>
+
+        </section>    
+
+    </body>
+</html>

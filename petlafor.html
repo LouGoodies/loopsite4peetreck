@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Pętle w PHP</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body link="white" vlink="white" alink="white" id="primary_feature" class="feature">
+
+        <section>
+            <h1 class="color" style="font-size: 50px">Pętla for w PHP</h1>
+
+            <h4 class="color" style="font-size: 20px;">Pętla for to najczęściej wykorzystywana pętla przez programistów, a już na pewno przez autora tego kursu. Ma ona następującą składnię:</h4>
+            <div class="definition" style="margin-right: 650px; margin-left: 650px;">
+                <strong>for</strong> 
+                (<em>inicjacja zmiennych</em>; <em>wyrażenie testujące</em> ; <em>zmiana wartości zmiennej</em>) {
+                    <br>... blok kodu wykonywany w pętli ...<br>
+                }
+            </div>
+            <h4 class="color" style="font-size: 20px;">Pierwszy przykład użycia pętli for - po wykonaniu dostaniemy wynik "Lubię placki" 100 razy</h4>   
+                     <div class="codebox" style="margin-left: 600px;">
+                        <pre class="tlocodeboxpre">
+                            &lt;?php
+                            for ($x=1; $x<1001; $x++) {
+                            echo "Lubię placki&lt;br>";
+                            }
+                            ?>
+                        </pre>
+                     </div>
+
+                     <h4 class="color" style="font-size: 20px;">Drugi przykład użycia pętli for - po wykonaniu liczba 2 zostanie pomnożona przez siebie i swój wynik 20 razy (2, 4, 8, 16... 1048576)</h4>   
+                     <div class="codebox" style="margin-left: 600px;">
+                        <pre class="tlocodeboxpre">
+                            &lt;?php
+                            for ($i=1; $i<=20; $i++) {
+                            echo 2**$i;
+                            echo '&lt;br>';
+                            }
+                            ?>
+                        </pre>
+                     </div>
+
+        </section>    
+
+    </body>
+</html>

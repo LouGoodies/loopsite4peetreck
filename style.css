@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'NunitoBold', sans-serif;
+    color: white;
+    src: url(fonts/NunitoBold.ttf);
+}
+
+.color {
+    font-family: 'NunitoBold', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.definition {
+    border: 1px solid;
+    border-color: #BBC;
+    text-align: center;
+    background-color: rgb(60, 167, 101);
+}
+
+.codebox {
+    max-width: 500px;
+    margin: auto;
+}
+
+.codeboxpre {
+    border: solid;
+    border-color: #686868;
+    border-left-color: #99cc99;
+    border-width: 0px;
+    border-left-width: 5px;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+}
+
+.tlocodeboxpre {
+    background-color: black;
+    width: 800px;
+    color: white;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    min-height: 100vh; /* minimum height = screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #primary_feature{
+    background-image: url("/koding.jpg");
+  }
+  .feature{
+    background:rgba(19, 8, 8, 0.274);
+  }
